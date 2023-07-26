@@ -121,3 +121,406 @@ Source-Age: 1
 [2023-07-26 17:36:18,210: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2023-07-26 21:42:28,052: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 21:42:28,099: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 21:42:28,104: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 21:42:28,106: INFO: common: created directory at: artifacts]
+[2023-07-26 21:42:28,107: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-26 21:42:28,108: INFO: data_ingestion: Trying to download file...]
+[2023-07-26 21:43:20,281: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6172:41A8:14702:17F01:64C145EC
+Accept-Ranges: bytes
+Date: Wed, 26 Jul 2023 16:12:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4739-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1690387949.949916,VS0,VE1802
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b0197a5d19159b10ecd8a476117282940f1b36c2
+Expires: Wed, 26 Jul 2023 16:17:30 GMT
+Source-Age: 1
+
+]
+[2023-07-26 21:43:20,289: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-07-26 21:43:20,629: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-07-26 21:43:20,980: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-26 21:43:20,988: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2023-07-26 21:43:21,002: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 21:43:21,007: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 21:43:21,008: INFO: common: created directory at: artifacts]
+[2023-07-26 21:43:21,008: ERROR: main: 'ConfigurationManager' object has no attribute 'get_prepare_base_model_config']
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 19, in <module>
+    prepare_base_model.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 12, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepare_base_model_config'
+[2023-07-26 21:46:55,631: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 21:46:55,637: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 21:46:55,643: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 21:46:55,646: INFO: common: created directory at: artifacts]
+[2023-07-26 21:46:55,647: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-26 21:46:55,647: INFO: data_ingestion: Trying to download file...]
+[2023-07-26 21:46:55,648: INFO: data_ingestion: File already exists of size: ~ 21806 KB]
+[2023-07-26 21:46:55,649: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-07-26 21:46:55,677: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-07-26 21:46:55,702: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-26 21:46:55,703: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2023-07-26 21:46:55,706: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 21:46:55,711: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 21:46:55,712: INFO: common: created directory at: artifacts]
+[2023-07-26 21:46:55,713: ERROR: main: "'ConfigBox' object has no attribute 'prepare_base_model'"]
+Traceback (most recent call last):
+  File "box\box.py", line 587, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 620, in box.box.Box.__getattr__
+  File "box\box.py", line 608, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 622, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 636, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 587, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 620, in box.box.Box.__getattr__
+  File "box\box.py", line 608, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 622, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 19, in <module>
+    prepare_base_model.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 12, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\config\configuaration.py", line 38, in get_prepare_base_model_config
+    config = self.config.prepare_base_model
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 636, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+[2023-07-26 22:19:46,073: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 22:19:46,093: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 22:19:46,097: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 22:19:46,099: INFO: common: created directory at: artifacts]
+[2023-07-26 22:19:46,100: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-26 22:19:46,100: INFO: data_ingestion: Trying to download file...]
+[2023-07-26 22:20:08,076: ERROR: main: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+Traceback (most recent call last):
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "d:\cnnclassification\src\cnnClassifier\components\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 557, in error
+    result = self._call_chain(*args)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[2023-07-26 22:21:03,761: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 22:21:03,769: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 22:21:03,772: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 22:21:03,773: INFO: common: created directory at: artifacts]
+[2023-07-26 22:21:03,774: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-26 22:21:03,775: INFO: data_ingestion: Trying to download file...]
+[2023-07-26 22:21:25,063: ERROR: main: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+Traceback (most recent call last):
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "d:\cnnclassification\src\cnnClassifier\components\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 557, in error
+    result = self._call_chain(*args)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[2023-07-26 22:26:14,941: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 22:26:14,946: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 22:26:14,953: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 22:26:14,956: INFO: common: created directory at: artifacts]
+[2023-07-26 22:26:14,957: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-26 22:26:14,958: INFO: data_ingestion: Trying to download file...]
+[2023-07-26 22:26:37,073: ERROR: main: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+Traceback (most recent call last):
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "d:\cnnclassification\src\cnnClassifier\components\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 557, in error
+    result = self._call_chain(*args)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[2023-07-26 22:31:12,862: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 22:31:12,874: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 22:31:12,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 22:31:12,886: INFO: common: created directory at: artifacts]
+[2023-07-26 22:31:12,887: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-26 22:31:12,889: INFO: data_ingestion: Trying to download file...]
+[2023-07-26 22:31:28,299: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6172:41A8:14702:17F01:64C145EC
+Accept-Ranges: bytes
+Date: Wed, 26 Jul 2023 17:01:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4729-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1690390874.805090,VS0,VE350
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0b00847f53606bac6e72f5abd4b99547196cf241
+Expires: Wed, 26 Jul 2023 17:06:14 GMT
+Source-Age: 0
+
+]
+[2023-07-26 22:31:28,305: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-07-26 22:31:28,528: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-07-26 22:31:28,708: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-26 22:31:28,708: INFO: main: *******************]
+[2023-07-26 22:31:28,708: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2023-07-26 22:31:28,714: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 22:31:28,716: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 22:31:28,717: INFO: common: created directory at: artifacts]
+[2023-07-26 22:31:28,718: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-26 22:32:17,600: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-26 22:32:17,954: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x==========x]
