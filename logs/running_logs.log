@@ -1,1 +1,123 @@
 [2023-07-25 15:34:01,704: INFO: __init__: logging has started]
+[2023-07-26 13:24:15,366: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 13:24:15,371: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 13:24:15,376: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 13:24:15,377: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\cnnclassification\src\cnnClassifier\utils\common.py", line 34, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\box.py", line 279, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\config\configuaration.py", line 15, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\utils\common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2023-07-26 13:25:09,024: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 13:25:09,027: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 13:25:09,029: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 13:25:09,029: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\cnnclassification\src\cnnClassifier\utils\common.py", line 34, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\box.py", line 279, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\config\configuaration.py", line 15, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\utils\common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2023-07-26 17:29:11,025: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 17:29:11,052: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 17:29:11,067: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 17:29:11,068: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\cnnclassification\src\cnnClassifier\utils\common.py", line 34, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\box.py", line 279, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\config\configuaration.py", line 16, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\utils\common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2023-07-26 17:35:50,176: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-26 17:35:50,179: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-26 17:35:50,198: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-26 17:35:50,201: INFO: common: created directory at: artifacts]
+[2023-07-26 17:35:50,202: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-26 17:35:50,203: INFO: data_ingestion: Trying to download file...]
+[2023-07-26 17:36:17,771: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CAB0:69BED:123692:1961C9:64C10C20
+Accept-Ranges: bytes
+Date: Wed, 26 Jul 2023 12:05:53 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ccu830042-CCU
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1690373152.262100,VS0,VE1668
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e157e0b118ee8d19808ed59a88a573a02a623d0f
+Expires: Wed, 26 Jul 2023 12:10:53 GMT
+Source-Age: 1
+
+]
+[2023-07-26 17:36:17,779: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-07-26 17:36:18,009: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-07-26 17:36:18,210: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]

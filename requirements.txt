@@ -4,8 +4,8 @@ notebook
 numpy
 matplotlib
 seaborn
-python-box==6.0.2
-pyYAML
+#python-box==6.0.2
+pyyaml
 tqdm
 ensure==1.0.2
 joblib
@@ -13,4 +13,7 @@ types-PyYAML
 scipy
 Flask
 Flask-Cors
+python-box[all]~=7.0
+python-box[ruamel.yaml,msgpack]~=7.0
+#box
 -e .
