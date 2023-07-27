@@ -524,3 +524,107 @@ x==========x]
 [2023-07-26 22:32:17,954: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
 
 x==========x]
+[2023-07-27 12:13:43,889: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-27 12:13:43,912: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 12:13:43,916: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 12:13:43,918: INFO: common: created directory at: artifacts]
+[2023-07-27 12:13:43,919: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-27 12:13:43,919: INFO: data_ingestion: Trying to download file...]
+[2023-07-27 12:15:32,894: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: C416:167279:6B744:99CA4:64C21221
+Accept-Ranges: bytes
+Date: Thu, 27 Jul 2023 06:43:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ccu830039-CCU
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1690440225.353148,VS0,VE1928
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 95538cfcbafc493079ad6af82245909688976390
+Expires: Thu, 27 Jul 2023 06:48:47 GMT
+Source-Age: 1
+
+]
+[2023-07-27 12:15:32,898: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-07-27 12:15:33,250: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-07-27 12:15:33,552: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-27 12:15:33,553: INFO: main: *******************]
+[2023-07-27 12:15:33,554: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2023-07-27 12:15:33,558: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 12:15:33,562: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 12:15:33,564: INFO: common: created directory at: artifacts]
+[2023-07-27 12:15:33,572: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-27 12:15:34,975: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-27 12:15:35,910: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x==========x]
+[2023-07-27 12:15:35,913: INFO: main: *******************]
+[2023-07-27 12:15:35,914: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-07-27 12:15:35,927: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 12:15:35,933: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 12:15:35,936: INFO: common: created directory at: artifacts]
+[2023-07-27 12:15:35,939: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-07-27 12:15:35,945: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-07-27 12:15:35,953: ERROR: main: 'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "D:\cnnClassification\main.py", line 32, in <module>
+    model_trainer.main()
+  File "d:\cnnclassification\src\cnnClassifier\pipeline\stage_03_training.py", line 13, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\cnnclassification\src\cnnClassifier\components\prepare_callback.py", line 33, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "d:\cnnclassification\src\cnnClassifier\components\prepare_callback.py", line 24, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\anaconda3\envs\myenv\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-07-27 12:44:44,294: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-27 12:44:44,303: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 12:44:44,311: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 12:44:44,312: INFO: common: created directory at: artifacts]
+[2023-07-27 12:44:44,313: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-27 12:44:44,313: INFO: data_ingestion: Trying to download file...]
+[2023-07-27 12:44:44,314: INFO: data_ingestion: File already exists of size: ~ 21806 KB]
+[2023-07-27 12:44:44,314: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-07-27 12:44:44,353: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-07-27 12:44:44,378: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-27 12:44:44,379: INFO: main: *******************]
+[2023-07-27 12:44:44,379: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2023-07-27 12:44:44,382: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 12:44:44,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 12:44:44,384: INFO: common: created directory at: artifacts]
+[2023-07-27 12:44:44,385: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-27 12:44:45,396: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-27 12:44:46,133: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x==========x]
+[2023-07-27 12:44:46,133: INFO: main: *******************]
+[2023-07-27 12:44:46,138: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-07-27 12:44:46,143: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 12:44:46,147: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 12:44:46,149: INFO: common: created directory at: artifacts]
+[2023-07-27 12:44:46,151: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-07-27 12:44:46,154: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-07-27 12:44:46,161: INFO: common: created directory at: artifacts\training]
+[2023-07-27 12:46:02,781: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
