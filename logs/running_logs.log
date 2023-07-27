@@ -670,3 +670,68 @@ x==========x]
 [2023-07-27 13:22:18,752: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-07-27 15:37:21,720: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.2:8081]
+[2023-07-27 15:37:21,722: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-07-27 15:37:21,727: INFO: _internal:  * Restarting with stat]
+[2023-07-27 15:37:30,074: WARNING: _internal:  * Debugger is active!]
+[2023-07-27 15:37:30,088: INFO: _internal:  * Debugger PIN: 171-662-223]
+[2023-07-27 15:37:50,342: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:37:50] "GET / HTTP/1.1" 200 -]
+[2023-07-27 15:37:57,936: INFO: _internal: 127.0.0.1 - - [27/Jul/2023 15:37:57] "GET / HTTP/1.1" 200 -]
+[2023-07-27 15:39:42,436: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:39:42] "POST /predict HTTP/1.1" 200 -]
+[2023-07-27 15:40:58,576: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:40:58] "POST /predict HTTP/1.1" 200 -]
+[2023-07-27 15:44:10,198: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:44:10] "POST /predict HTTP/1.1" 200 -]
+[2023-07-27 15:45:44,258: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:45:44] "POST /predict HTTP/1.1" 200 -]
+[2023-07-27 15:45:48,379: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000020F33290F40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-07-27 15:45:48,384: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:45:48] "POST /predict HTTP/1.1" 200 -]
+[2023-07-27 15:45:49,907: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000020F3360A7A0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-07-27 15:45:49,912: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:45:49] "POST /predict HTTP/1.1" 200 -]
+[2023-07-27 15:46:29,919: INFO: _internal: 192.168.1.2 - - [27/Jul/2023 15:46:29] "POST /predict HTTP/1.1" 200 -]
+[2023-07-27 15:51:56,449: INFO: _internal:  * Detected change in 'D:\\cnnClassification\\main.py', reloading]
+[2023-07-27 15:51:58,602: INFO: _internal:  * Restarting with stat]
+[2023-07-27 15:52:11,254: WARNING: _internal:  * Debugger is active!]
+[2023-07-27 15:52:11,266: INFO: _internal:  * Debugger PIN: 171-662-223]
+[2023-07-27 15:53:19,166: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-27 15:53:19,182: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 15:53:19,195: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 15:53:19,197: INFO: common: created directory at: artifacts]
+[2023-07-27 15:53:19,197: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-27 15:53:19,197: INFO: data_ingestion: Trying to download file...]
+[2023-07-27 15:53:19,198: INFO: data_ingestion: File already exists of size: ~ 21806 KB]
+[2023-07-27 15:53:19,198: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-07-27 15:53:19,242: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-07-27 15:53:19,271: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-27 15:53:19,272: INFO: main: *******************]
+[2023-07-27 15:53:19,273: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2023-07-27 15:53:19,277: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 15:53:19,280: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 15:53:19,282: INFO: common: created directory at: artifacts]
+[2023-07-27 15:53:19,283: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-27 15:53:19,991: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-27 15:53:20,444: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x==========x]
+[2023-07-27 15:53:20,444: INFO: main: *******************]
+[2023-07-27 15:53:20,446: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-07-27 15:53:20,453: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 15:53:20,456: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 15:53:20,460: INFO: common: created directory at: artifacts]
+[2023-07-27 15:53:20,462: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-07-27 15:53:20,462: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-07-27 15:53:20,466: INFO: common: created directory at: artifacts\training]
+[2023-07-27 16:04:45,710: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-07-27 16:04:45,715: INFO: main: *******************]
+[2023-07-27 16:04:45,715: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-07-27 16:04:45,720: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-27 16:04:45,730: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-27 16:04:45,735: INFO: common: created directory at: artifacts]
+[2023-07-27 16:05:07,885: INFO: common: json file saved at: scores.json]
+[2023-07-27 16:05:07,885: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
